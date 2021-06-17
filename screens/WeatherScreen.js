@@ -1,15 +1,14 @@
 import React from 'react';
 import {Text, ScrollView, StyleSheet, SafeAreaView, Dimensions} from 'react-native';
-import ClothesScreen from './ClothesScreen';
+
 
 const WeatherScreen = () => {
     return (
-        <ScrollView horizontal={true} pagingEnabled={true}>
+      
           <SafeAreaView style={styles.container}>
               <Text style={styles.MainText}>WeatherScreen</Text>
           </SafeAreaView>
-          <ClothesScreen />
-        </ScrollView>
+        
     );
 };
 

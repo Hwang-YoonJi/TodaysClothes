@@ -1,3 +1,31 @@
+import React from 'react';
+import { StyleSheet, ScrollView, Dimensions, SafeAreaView } from 'react-native';
+import WeatherScreen from './screens/WeatherScreen';
+import ClothesScreen from './screens/ClothesScreen';
+
+const {width} = Dimensions.get('window');
+const numberOfComponents = 2; //자식 컴포넘트 개수
+
+export default function App() {
+  retrun (
+    <SafeAreaView>
+      <ScrollView horizontal={true} style={styles.scrollView}>
+        <WeatherScreen />
+        <ClothesScreen />
+      </ScrollView>
+    </SafeAreaView>
+  )
+}
+
+const styles = StyleSheet.create({
+ scrollView: {
+   flex: 1,
+ }
+})
+
+export default App;
+
+/*
 import React, { useCallback, useEffect, useState } from 'react';
 import { ScrollView } from 'react-native';
 import 'react-native-gesture-handler';
@@ -52,7 +80,8 @@ export default function App() {
     <NavigationContainer>
       <AppStackScreen />
     </NavigationContainer>
-    */
+    *
     <WeatherScreen />
   );
 }
+*/

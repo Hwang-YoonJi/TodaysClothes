@@ -1,4 +1,4 @@
-import * as React from 'react';
+/*import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import WeatherScreen from './screens/WeatherScreen';
@@ -22,3 +22,4 @@ const AppStackScreen = () => {
 };
 
 export default AppStackScreen;
+*/
