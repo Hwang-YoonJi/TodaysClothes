@@ -138,16 +138,120 @@ const HomeScreen = () => {
         <View
           style={{
             marginTop: 20,
-            alignItems: "center",
-            justifyContent: "center",
             backgroundColor: "#fff",
             borderRadius: 10,
             width: 350,
-            height: 200,
+            height: 370,
             marginBottom: 70,
           }}
         >
-          <Text>일별 날씨</Text>
+          <Text
+            style={{
+              marginVertical: 10,
+              marginLeft: 10,
+              fontWeight: "bold",
+            }}
+          >
+            일별 날씨
+          </Text>
+          <View
+            style={{ backgroundColor: "black", height: 1, width: "100%" }}
+          ></View>
+          <View
+            style={{
+              flexDirection: "row",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text style={{ marginHorizontal: 20 }}>오늘</Text>
+            <Image
+              source={require("../assets/sunny.png")}
+              style={{ marginHorizontal: 28 }}
+            />
+            <Text style={{ color: "red", marginHorizontal: 26 }}>최고 29°</Text>
+            <Text style={{ color: "blue", marginHorizontal: 28 }}>
+              최저 26°
+            </Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text>화</Text>
+            <Image source={require("../assets/sunny.png")} />
+            <Text style={{ color: "red" }}> 최고 29°</Text>
+            <Text style={{ color: "blue" }}>최저 26°</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text>수</Text>
+            <Image source={require("../assets/sun.png")} />
+            <Text style={{ color: "red" }}> 최고 28°</Text>
+            <Text style={{ color: "blue" }}>최저 25°</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text>목</Text>
+            <Image source={require("../assets/sun.png")} />
+            <Text style={{ color: "red" }}> 최고 28°</Text>
+            <Text style={{ color: "blue" }}>최저 25°</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text>금</Text>
+            <Image source={require("../assets/rain.png")} />
+            <Text style={{ color: "red" }}> 최고 27°</Text>
+            <Text style={{ color: "blue" }}>최저 24°</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text>토</Text>
+            <Image source={require("../assets/rain.png")} />
+            <Text style={{ color: "red" }}> 최고 27°</Text>
+            <Text style={{ color: "blue" }}>최저 25°</Text>
+          </View>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 15,
+            }}
+          >
+            <Text>일</Text>
+            <Image source={require("../assets/sunny.png")} />
+            <Text style={{ color: "red" }}> 최고 29°</Text>
+            <Text style={{ color: "blue" }}>최저 26°</Text>
+          </View>
         </View>
       </ScrollView>
     </View>
