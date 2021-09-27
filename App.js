@@ -36,9 +36,7 @@ const SwiperComponent = () => {
         <View
           style={{
             flex: 1,
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#6ec6ff",
+            backgroundColor: "#fff",
           }}
         >
           <StandardScreen />

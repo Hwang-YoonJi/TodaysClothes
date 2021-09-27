@@ -4,7 +4,7 @@ import { Text, View, ScrollView } from "react-native";
 const HomeScreen = () => {
   return (
     <View style={{ flex: 1 }}>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{
             marginTop: 50,
@@ -19,7 +19,8 @@ const HomeScreen = () => {
           <Text style={{ fontSize: 70, color: "#fff" }}>26°</Text>
           <Text style={{ fontSize: 20, color: "#fff" }}>체감온도 27°</Text>
           <Text style={{ fontSize: 20, color: "#fff", marginTop: 5 }}>
-            최고:29° 최저:25°
+            최고 <Text style={{ color: "red" }}>29°</Text> 최저{" "}
+            <Text style={{ color: "blue" }}>25°</Text>
           </Text>
         </View>
         <View
@@ -57,7 +58,7 @@ const HomeScreen = () => {
             borderRadius: 10,
             width: 350,
             height: 200,
-            marginBottom: 50,
+            marginBottom: 70,
           }}
         >
           <Text>일별 날씨</Text>
