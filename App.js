@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View } from "react-native";
 import Swiper from "react-native-swiper";
 import HomeScreen from "./screens/HomeScreen";
 import StandardScreen from "./screens/StandardScreen";

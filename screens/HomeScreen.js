@@ -12,7 +12,7 @@ const HomeScreen = () => {
             justifyContent: "center",
           }}
         >
-          <Text style={{ fontSize: 40, color: "#fff" }}>안양시</Text>
+          <Text style={{ fontSize: 40, color: "#fff" }}>서울특별시</Text>
           <Text style={{ fontSize: 20, color: "#fff", marginTop: 5 }}>
             맑음
           </Text>
