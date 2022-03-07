@@ -5,10 +5,20 @@ import HomeScreen from "./screens/HomeScreen";
 import StandardScreen from "./screens/StandardScreen";
 import Loading from "./screens/Loading";
 import * as Location from "expo-location";
+import axios from "axios";
+
+const API_KEY = "04a580dd9502ee0f11aa350fc9f95f64";
 
 export default class extends React.Component {
   state = {
     isLoading: true,
+  };
+
+  getWeather = async (latitude, longitude) => {
+    const { data } = await axios.get(
+      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
+    );
+    console.log(data);
   };
 
   getLocation = async () => {
@@ -20,6 +30,7 @@ export default class extends React.Component {
         coords: { latitude, longitude },
       } = await Location.getCurrentPositionAsync();
       // console.log(coords.latitude, coords.longitude);
+      this.getWeather(latitude, longitude);
       this.setState({ isLoading: false });
     } catch (error) {
       Alert.alert("Can't find you.", "So sad");

@@ -14,4 +14,6 @@
 npm i react-native-swiper
 
 expo install expo-location
+
+npm install axios
 ```
